@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>블로그 프로토타입</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .nav-home {
+            background-color: #1b1e21;
+        }
+        .nav-home a {
+            color: aliceblue;
+        }
+
+        .nav-category {
+            background-color: #343a40;
+        }
+        .nav-category a {
+            color: beige;
+        }
+    </style>
     <script src="javascript/jquery-3.4.1.min.js"></script>
-    <script>
-        $(function () {
-            $("#test").text("JQuery 동작을 확인합니다");
-        });
-    </script>
+    <script src="javascript/bootstrap.js"></script>
+
 </head>
 <body>
-    <p id="test"></p>
+    <nav class="nav nav-justified nav-home">
+        <a class="nav-item nav-link" href="#">ABOUT COCOA</a>
+    </nav>
+
+    <nav class="nav nav-justified nav-category">
+        <a class="nav-item nav-link" href="#">BOOK</a>
+        <a class="nav-item nav-link" href="#">MUSIC</a>
+        <a class="nav-item nav-link" href="#">STUDY</a>
+    </nav>
 </body>
 </html>
