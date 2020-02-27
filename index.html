@@ -2,21 +2,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>블로그 프로토타입</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
-        .nav-home {
-            background-color: #1b1e21;
+        .navigation hr {
+            margin: 0px;
         }
-        .nav-home a {
-            color: aliceblue;
+        .container-fluid {
+            padding-top: 50px;
+            height: auto;
         }
-
-        .nav-category {
-            background-color: #343a40;
+        .card {
+            margin: 30px;
+            height: 300px;
         }
-        .nav-category a {
-            color: beige;
+        .bg-F2F1EF {
+            background-color: #F2F1EF !important;
+        }
+        .bg-B1A6A4 {
+            background-color: #B1A6A4 !important;
+        }
+        .bg-6B5D33 {
+            background-color: #6b5d33 !important;
+        }
+        .bg-413F3D {
+            background-color: #413F3D !important;
+        }
+        .text-D8CFD5 {
+            color: #D8CFD5 !important;
         }
     </style>
     <script src="javascript/jquery-3.4.1.min.js"></script>
@@ -24,14 +38,71 @@
 
 </head>
 <body>
-    <nav class="nav nav-justified nav-home">
-        <a class="nav-item nav-link" href="#">ABOUT COCOA</a>
-    </nav>
+    <div class="navigation bg-413F3D">
+        <nav class="nav nav-justified nav-home">
+            <a class="nav-item nav-link text-white" href="#">cocoa</a>
+        </nav>
+        <hr class="bg-B1A6A4">
+        <nav class="nav nav-justified nav-category">
+            <a class="nav-item nav-link text-D8CFD5" href="#book">Book</a>
+            <a class="nav-item nav-link text-D8CFD5" href="#music">Music</a>
+            <a class="nav-item nav-link text-D8CFD5" href="#study">Study</a>
+        </nav>
+    </div>
 
-    <nav class="nav nav-justified nav-category">
-        <a class="nav-item nav-link" href="#">BOOK</a>
-        <a class="nav-item nav-link" href="#">MUSIC</a>
-        <a class="nav-item nav-link" href="#">STUDY</a>
-    </nav>
+    <div class="container-fluid bg-F2F1EF">
+        <div class="row">
+            <div class="col-md">
+                <div class="card bg-6B5D33 text-white" id="book">
+                    <div class="card-header">
+                        <h4 class="card-title">Book</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Find "ONE IMPRESSIVE LINE" in the book.<br>
+                            Note "ONE IMPRESSIVE LINE" at the page.<br>
+                            Review "ONE IMPRESSIVE LINE" anytime.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link btn btn-outline-light" href="#">Go To</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-6B5D33 text-white" id="music">
+                    <div class="card-header">
+                        <h4 class="card-title">Music</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Sketch for Melody.<br>
+                            Sketch for lyrics.<br>
+                            And Cover Song.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link btn btn-outline-light" href="#">Go To</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-6B5D33 text-white" id="study">
+                    <div class="card-header">
+                        <h4 class="card-title">Study</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Computer Science Knowledge Base<br>
+                            Project Description<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link btn btn-outline-light" href="#">Go To</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
